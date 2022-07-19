@@ -52,8 +52,6 @@
 .menu a:hover {
     background-color: #2bd385a8;
     color: rgb(0, 0, 0);
-
-
     border-radius: 12px 12px 12px 3px;
     background-image: linear-gradient( to right #5050502f, #ffffff);
     background-size: 200% 200%;
