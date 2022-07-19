@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:200,400,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+.header {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: rgba(148, 149, 151, 0.171);
+    backdrop-filter: blur(12px);
+    background-image: linear-gradient( #5050506e, #ffffff);
+}
+
+.header a {
+    margin-left: 14vw;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu a {
+    margin-left: 20px;
+    padding: 8px;
+    color: rgb(36, 36, 36);
+    font-weight: bold;
+    font-size: 17px;
+    transition: .4s;
+    
+}
+
+.menu a:hover {
+    background-color: #2bd385a8;
+    color: rgb(0, 0, 0);
+
+
+    border-radius: 12px 12px 12px 3px;
+    background-image: linear-gradient( to right #5050502f, #ffffff);
+    background-size: 200% 200%;
+    animation: gradientrEffect 6s linear infinite alternate;
+
+}
+
+@keyframes gradientEffect {
+From {background-position: 0 0;}
+to { background-position: 100% 100%;}
+}
+
+#inicio.flex-container {
+    width: 52%;
+    height: 650px;
+    
+    margin-left: 15vw;
+    position: relative;
+    padding-top: 40vh;
+}
+
+#inicio.flex-container h3.title {
+    font-size: 25px;
+}
+
+#inicio.flex-container h3.text {
+    font-size: 25px;
+}
+
+#inicio.flex-container h1 {
+    font-size: 50px;
+    color: rgb(24, 23, 23);
+}
+
+#sobre.flex-container {
+    width: 52%;
+    height: 650px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 15vw;
+    justify-content: center;
+    position: relative;
+    padding-top: 9em;
+    text-align:left
+}
+
+
+
+#sobre.flex-container h1 {
+    font-size: 60px;
+}
+
+#sobre.flex-container p {
+    font-size: 20px;
+}
+
+#projetos.content {
+    width: 52%;
+    height: 650px;
+    margin-left: 15vw;
+    position: relative;
+    padding-top: 15em;
+}
+
+#projetos.content h1 {
+    font-size: 60px;
+}
+
+#projetos.content h2 {
+    font-size: 25px;
+}
+
+#contatos.redes {
+    width: 52%px;
+    height: 565px;
+    margin-left: 15vw;
+    position: relative;
+    padding-top: 200px;
+    font-size: 30px;
+}
+
+#contatos.redes img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    box-sizing: border-box;
+}
+
+#contatos.redes img:hover {
+    border: 1px solid rgba(0, 0, 0, 0.637);
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 10px rgba(39, 39, 39, 0.877);
+    transition: transform .2s, border 1s;
+}
+
+#footer {
+    box-sizing: border-box;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    left: auto;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(#ffffff, #5050506e);
+    
+}
